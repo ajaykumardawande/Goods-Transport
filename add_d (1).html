@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title>Add Driver Data</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- <link rel = "stylesheet" href = "vehicle.css"> !-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <a href="index_d.php">View Data</a>
+    <br/><br/>
+
+    <form action="add_d.php" method="post" name="form1">
+        <div id="vehicledata" class="container">
+            <div class="panel panel-default">
+                <div class="panel-heading" style="background-color:aqua"><b>Driver Details</b></div>
+                <div class="panel-body">
+                    <form method="post">
+                        <div class="form-group">
+                            <label for="driver_type">DriverType</label>
+                            <select class="form-control" name="driver_type" id="driver_type">
+                                <option value = "Male">Male</option>
+                                <option value = "Female">Female</option>
+                            </select>
+                            <label for="driver_name">Driver Name</label>
+                            <input type="text" class="form-control" name="driver_name" id="driver_name">
+                            <label for="driver_lic">Driver License</label>
+                            <input type="text" class="form-control" name="driver_lic" id="driver_lic">
+                            <label for="driver_age">Driver Age</label>
+                            <input type="number" class="form-control" name="driver_age" id="driver_age">
+                            <label for="driver_city">Driver City</label>
+                            <input type="text" class="form-control" name="driver_city" id="driver_city">
+
+                            <br><br>
+                            <input type="submit" name="Submit" value="Add">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
